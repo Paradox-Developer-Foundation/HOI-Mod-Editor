@@ -1,0 +1,51 @@
+/* Mods page specific styles - 基于全局变量 */
+.mods-container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.mods-container h1 {
+    font-size: 1.3rem;
+    margin: 0 0 0.75rem 0;
+    color: var(--text-color);
+}
+
+.mods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.mod-item {
+    padding: 0.9rem 1rem;
+    border-radius: calc(var(--radius) - 2px);
+    background: linear-gradient(180deg, transparent, color-mix(in srgb, transparent 70%, black 2%));
+    border: 1px solid rgba(0,0,0,0.06);
+    cursor: pointer;
+    transition: transform var(--motion-quick), box-shadow var(--motion-quick), background var(--motion-quick), border-color var(--motion-quick);
+}
+
+.mod-item .mod-title {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.mod-item .mod-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.mod-item:hover {
+    transform: translateX(6px);
+    box-shadow: var(--elevation-2);
+    background: var(--accent-weak);
+    border-color: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+/* 小屏适配 */
+@media (max-width: 900px) {
+    .mods-container { padding: 0.5rem; }
+    .mod-item { padding: 0.7rem; }
+}
+

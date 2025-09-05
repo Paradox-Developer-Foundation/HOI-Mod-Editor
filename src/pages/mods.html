@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <title>模组列表 - HOI Mod Editor</title>
+    <link rel="stylesheet" href="../css/mods.css">
+    <script>
+    // 如果作为独立页面直接打开，则跳回主页面并携带 hash，保证侧边栏可见
+    if (window.top === window.self) {
+        if (!location.hash.includes('from-pages')) {
+            window.location.replace('../index.html#mods?from-pages=1');
+        }
+    }
+    </script>
+</head>
+<body>
+<div class="mods-container">
+    <h1>模组列表</h1>
+    <div class="settings-section">
+        <div class="mods-list">
+            <div class="mod-item" data-name="ModA">Mod A - 示例模组</div>
+            <div class="mod-item" data-name="ModB">Mod B - 示例模组</div>
+            <div class="mod-item" data-name="ModC">Mod C - 示例模组</div>
+        </div>
+    </div>
+
+    <!-- 返回链接已移除；侧边栏主页按钮负责回到主界面 -->
+</div>
+
+<script src="../javascript/mods.js"></script>
+</body>
+</html>

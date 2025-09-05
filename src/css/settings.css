@@ -1,0 +1,31 @@
+.settings-container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.settings-container h1 {
+    font-size: 1.3rem;
+    margin: 0 0 0.75rem 0;
+    color: var(--text-color);
+}
+
+.settings-section {
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+
+.settings-option {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* 小屏适配 */
+@media (max-width: 900px) {
+    .settings-container { padding: 0.5rem; }
+}
