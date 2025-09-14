@@ -1,6 +1,25 @@
 {
+  "name": "hoimodeditor",
+  "version": "1.0.0",
+  "main": "main.js",
   "dependencies": {
-    "@tauri-apps/api": "^2.8.0",
-    "@tauri-apps/cli": "^2.8.4"
-  }
+    "electron": "^38.1.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "start": "npx electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paradox-Developer-Foundation/HOI-Mod-Editor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paradox-Developer-Foundation/HOI-Mod-Editor/issues"
+  },
+  "homepage": "https://github.com/Paradox-Developer-Foundation/HOI-Mod-Editor#readme",
+  "description": ""
 }
